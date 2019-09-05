@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="dist/css/bootstrap.css">
+	<meta charset="utf-8">
+	<script type="text/javascript">
+
+		function checkString(){
+			var palidromString=document.getElementById('pString').value;
+			console.log(palidromString);
+
+			//var reverseString=palidromString.split("").reverse().join("");
+			var reverseStr=palidromString.split("");
+			console.log(reverseStr);
+			var reverfunction=reverseStr.reverse();
+			console.log(reverfunction);
+			var reverFunctionJoint=reverfunction.join("");
+			console.log(reverFunctionJoint);
+			var msg;
+			if(palidromString==reverFunctionJoint)
+			{
+				msg="String is palidrom";
+			}else
+			{
+				msg="string is not palidrom";
+			}
+			console.log(msg);
+
+		}
+
+	</script>
+</head>
+<body>
+<div class="row">
+	<div class="col-sm-4"></div>
+	<div class="col-sm-4">
+		<div class="form-group">
+			<label>Enter String</label>
+			<input type="text" id="pString" name="" placeholder="Enter Your String" class="form-control">
+		</div>
+		<div class="text-center">
+			<button class="btn btn-primary" onclick="checkString()">Check Palidrom String</button>
+		</div>
+	</div>
+	<div class="col-sm-2"></div>
+</div>
+</body>
+</html>
